@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(mkdir -p /Users/yousi/human/NervoGolf/nervo-web/site/public)",
+      "Bash(npm install *)"
+    ],
+    "additionalDirectories": [
+      "/Users/yousi/human/NervoGolf/nervo-web/site"
+    ]
+  }
+}

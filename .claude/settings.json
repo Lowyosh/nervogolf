@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(mv assets/logos logos/)",
+      "Bash(mv assets/club-member.png img/planes/member.png)",
+      "Bash(mv assets/gold-member.png img/planes/gold.png)",
+      "Bash(mv assets/platinum-member.png img/planes/platinum.png)",
+      "Bash(mv assets/month-member.webp img/planes/month-member.webp)",
+      "Bash(python3 -c ' *)",
+      "Bash(git --version)",
+      "Bash(gh auth *)"
+    ]
+  }
+}

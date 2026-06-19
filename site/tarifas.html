@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="es" data-theme="nervogolf">
+<head>
+  <meta charset="utf-8" />
+  <title>Tarifas — Nervo Golf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tarifas de Nervo Golf: simuladores Full Swing y Awolf Quantum VX, fittings, bonos de uso libre, clases y membresías." />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- ─── TOPBAR ─────────────────────────────────────────────────────────── -->
+  <header class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-6">
+    <div class="relative max-w-6xl w-full">
+    <div class="topbar-glass absolute inset-0 rounded-2xl pointer-events-none"></div>
+    <div class="navbar relative z-10">
+
+      <div class="navbar-start ml-2">
+        <a href="/"><img src="/assets/logo-h-negro.svg" alt="NervoGolf" class="h-8 w-auto transition-all hover:scale-105" /></a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-2">
+          <li>
+            <details>
+              <summary>Simuladores</summary>
+              <ul class="p-2 w-40 z-10 rounded-xl dropdown-glass">
+                <li><a href="/#simuladores">Awolf Quantum VX</a></li>
+                <li><a href="/#full-swing">Full Swing</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="../#fitting">Fitting</a></li>
+          <li><a href="../#planes">Club Nervo</a></li>
+          <li><a href="../tarifas.html">Tarifas</a></li>
+          <li><a href="../#academia">Academia</a></li>
+          <li><a href="../#tienda">Tienda</a></li>
+          <li><a href="../#taller">Taller</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end gap-4">
+        <div class="dropdown dropdown-end lg:hidden">
+          <div tabindex="0" role="button" class="btn-ghost btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1" class="menu menu-md dropdown-content rounded-2xl z-10 mt-10 w-52 p-2 dropdown-glass">
+            <li>
+              <details>
+                <summary>Simuladores</summary>
+                <ul class="p-2 w-40 z-10 rounded-xl dropdown-glass">
+                  <li><a href="/#simuladores">Awolf Quantum VX</a></li>
+                  <li><a href="/#full-swing">Full Swing</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="/#fitting">Fitting</a></li>
+            <li><a href="/#planes">Club Nervo</a></li>
+            <li><a href="/tarifas.html">Tarifas</a></li>
+            <li><a href="/#academia">Academia</a></li>
+            <li><a href="/#tienda">Tienda</a></li>
+            <li><a href="/#taller">Taller</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <a href="https://eu.golfmanager.com/nervogolf" target="_blank" class="btn btn-primary btn-lg rounded-xl">Reservar</a>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <div class="min-h-screen bg-base-100 flex flex-col">
+    <main class="flex-1 max-w-6xl w-full mx-auto px-6 sm:px-8 pt-36 pb-24">
+
+      <a href="/" class="inline-flex items-center gap-2 text-sm text-base-content/50 hover:text-base-content transition-colors mb-8 no-underline group">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform group-hover:-translate-x-1">
+          <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Inicio
+      </a>
+
+      <!-- HEADER -->
+      <div class="mb-10">
+        <h1 class="text-4xl sm:text-5xl font-extrabold montserrat tracking-tight leading-tight">Reserva tu box.<br>Mejora tu juego.</h1>
+        <p class="text-base-content/70 mt-5 max-w-xl text-lg">
+          Simuladores Full Swing y Awolf Quantum VX, fittings profesionales, bonos y clases. Elige el servicio y consulta su precio.
+        </p>
+      </div>
+
+      <!-- TABS -->
+      <div class="sticky top-0 z-20 -mx-6 sm:-mx-8 px-6 sm:px-8 py-3 bg-base-100/85 backdrop-blur border-b border-base-300 mb-10">
+        <div class="flex gap-2 overflow-x-auto no-scrollbar" role="tablist" aria-label="Servicios">
+          <button class="tab-btn shrink-0 montserrat font-semibold text-sm rounded-full px-4 py-2 transition-colors whitespace-nowrap" role="tab" aria-selected="true" data-tab="sim">Simuladores</button>
+          <button class="tab-btn shrink-0 montserrat font-semibold text-sm rounded-full px-4 py-2 transition-colors whitespace-nowrap" role="tab" aria-selected="false" data-tab="fit">Fittings</button>
+          <button class="tab-btn shrink-0 montserrat font-semibold text-sm rounded-full px-4 py-2 transition-colors whitespace-nowrap" role="tab" aria-selected="false" data-tab="bonos">Bonos uso libre</button>
+          <button class="tab-btn shrink-0 montserrat font-semibold text-sm rounded-full px-4 py-2 transition-colors whitespace-nowrap" role="tab" aria-selected="false" data-tab="clases">Clases</button>
+          <button class="tab-btn shrink-0 montserrat font-semibold text-sm rounded-full px-4 py-2 transition-colors whitespace-nowrap" role="tab" aria-selected="false" data-tab="socios">Club Nervo</button>
+        </div>
+      </div>
+
+      <!-- ============ SIMULADORES ============ -->
+      <section class="panel" id="sim" role="tabpanel">
+        <div class="mb-6">
+          <h2 class="text-2xl sm:text-3xl font-extrabold montserrat tracking-tight">Simuladores por hora</h2>
+          <p class="text-base-content/70 mt-2 max-w-2xl">Precio según duración y franja horaria. Los Members disfrutan de tarifa reducida en todos los simuladores.</p>
+        </div>
+
+        <!-- Member / Guest -->
+        <div class="join mb-6 gap-2" role="tablist" aria-label="Tipo de cliente">
+          <button class="seg-btn btn btn-sm join-item rounded-full" aria-selected="true" data-aud="ext">Guest</button>
+          <button class="seg-btn btn btn-sm join-item rounded-full" aria-selected="false" data-aud="soc">Member</button>
+        </div>
+
+        <div class="flex flex-wrap gap-4 text-xs text-base-content/60 mb-6 font-medium">
+          <span><b class="text-base-content">Valle</b> L–V 10–16h</span>
+          <span><b class="text-base-content">Prime</b> L–J desde 16h</span>
+          <span><b class="text-base-content">Peak</b> <i class="ph ph-star-four text-accent align-middle"></i> V desde 16h · S · D · festivos</span>
+        </div>
+
+        <!-- Guest -->
+        <div class="sim-group" data-aud="ext">
+          <div class="grid sm:grid-cols-2 gap-5">
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Full Swing</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">25 €</td><td class="text-right font-semibold">35 €</td><td class="text-right font-semibold">40 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">40 €</td><td class="text-right font-semibold">60 €</td><td class="text-right font-semibold">70 €</td></tr>
+                  <tr><td class="text-base-content/60">3 horas</td><td class="text-right font-semibold">60 €</td><td class="text-right font-semibold">84 €</td><td class="text-right font-semibold">96 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Full Swing · 2 cabinas</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">50 €</td><td class="text-right font-semibold">70 €</td><td class="text-right font-semibold">80 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">80 €</td><td class="text-right font-semibold">120 €</td><td class="text-right font-semibold">140 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Awolf Quantum VX</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">40 €</td><td class="text-right font-semibold">65 €</td><td class="text-right font-semibold">79 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">64 €</td><td class="text-right font-semibold">112 €</td><td class="text-right font-semibold">140 €</td></tr>
+                  <tr><td class="text-base-content/60">3 horas</td><td class="text-right font-semibold">96 €</td><td class="text-right font-semibold">156 €</td><td class="text-right font-semibold">190 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Awolf Quantum VX · 2 boxes</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">80 €</td><td class="text-right font-semibold">130 €</td><td class="text-right font-semibold">158 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">128 €</td><td class="text-right font-semibold">224 €</td><td class="text-right font-semibold">279 €</td></tr>
+                  <tr><td class="text-base-content/60">3 horas</td><td class="text-right font-semibold">192 €</td><td class="text-right font-semibold">312 €</td><td class="text-right font-semibold">380 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- SOCIO -->
+        <div class="sim-group hidden" data-aud="soc">
+          <div class="grid sm:grid-cols-2 gap-5">
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Full Swing</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">20 €</td><td class="text-right font-semibold">28 €</td><td class="text-right font-semibold">32 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">32 €</td><td class="text-right font-semibold">48 €</td><td class="text-right font-semibold">56 €</td></tr>
+                  <tr><td class="text-base-content/60">3 horas</td><td class="text-right font-semibold">48 €</td><td class="text-right font-semibold">67 €</td><td class="text-right font-semibold">77 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Full Swing · 2 cabinas</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">40 €</td><td class="text-right font-semibold">56 €</td><td class="text-right font-semibold">64 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">64 €</td><td class="text-right font-semibold">96 €</td><td class="text-right font-semibold">112 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Fitting · Box</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">25 €</td><td class="text-right font-semibold">32 €</td><td class="text-right font-semibold">37 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">45 €</td><td class="text-right font-semibold">57 €</td><td class="text-right font-semibold">65 €</td></tr>
+                  <tr><td class="text-base-content/60">3 horas</td><td class="text-right font-semibold">60 €</td><td class="text-right font-semibold">77 €</td><td class="text-right font-semibold">89 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Awolf Quantum VX</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">32 €</td><td class="text-right font-semibold">52 €</td><td class="text-right font-semibold">63 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">51 €</td><td class="text-right font-semibold">90 €</td><td class="text-right font-semibold">112 €</td></tr>
+                  <tr><td class="text-base-content/60">3 horas</td><td class="text-right font-semibold">76 €</td><td class="text-right font-semibold">124 €</td><td class="text-right font-semibold">151 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body p-0">
+              <h3 class="montserrat font-semibold text-lg px-5 pt-4">Awolf Quantum VX · 2 boxes</h3>
+              <table class="table">
+                <thead><tr><th>Duración</th><th class="text-right">Valle</th><th class="text-right">Prime</th><th class="text-right">Peak <i class="ph ph-star-four text-accent text-xs"></i></th></tr></thead>
+                <tbody>
+                  <tr><td class="text-base-content/60">1 hora</td><td class="text-right font-semibold">64 €</td><td class="text-right font-semibold">104 €</td><td class="text-right font-semibold">126 €</td></tr>
+                  <tr><td class="text-base-content/60">2 horas</td><td class="text-right font-semibold">102 €</td><td class="text-right font-semibold">180 €</td><td class="text-right font-semibold">224 €</td></tr>
+                  <tr><td class="text-base-content/60">3 horas</td><td class="text-right font-semibold">152 €</td><td class="text-right font-semibold">248 €</td><td class="text-right font-semibold">302 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+        </div>
+        <p class="text-xs text-base-content/50 mt-6">// Precios en € · IVA incluido. Reserva con antelación según tu tipo de membresía.</p>
+      </section>
+
+      <!-- ============ FITTINGS ============ -->
+      <section class="panel hidden" id="fit" role="tabpanel">
+        <div class="mb-6">
+          <h2 class="text-2xl sm:text-3xl font-extrabold montserrat tracking-tight">Fittings</h2>
+          <p class="text-base-content/70 mt-2 max-w-2xl">Análisis profesional de tus palos. Reserva con hasta 30 días de antelación.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Fitting de hierros</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">1 hora</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Guest</span><span class="font-semibold">59 €</span></div>
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Member</span><span class="font-semibold">45 €</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Fitting completo</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">1,5 horas</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Guest</span><span class="font-semibold">119 €</span></div>
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Member</span><span class="font-semibold">85 €</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BONOS ============ -->
+      <section class="panel hidden" id="bonos" role="tabpanel">
+        <div class="mb-6">
+          <h2 class="text-2xl sm:text-3xl font-extrabold montserrat tracking-tight">Bonos de uso libre</h2>
+          <p class="text-base-content/70 mt-2 max-w-2xl">Horas de simulador a precio reducido. Reserva con hasta 7 días de antelación.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Bono 5h · Full Swing</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">5 horas</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Guest</span><span class="font-semibold">180 € <span class="text-xs font-normal text-base-content/50">36 €/h</span></span></div>
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Member</span><span class="font-semibold">145 € <span class="text-xs font-normal text-base-content/50">29 €/h</span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Bono 10h · Full Swing</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">10 horas</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Guest</span><span class="font-semibold">320 € <span class="text-xs font-normal text-base-content/50">32 €/h</span></span></div>
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Member</span><span class="font-semibold">260 € <span class="text-xs font-normal text-base-content/50">26 €/h</span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Bono 10h · Awolf Quantum VX</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">10 horas</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Guest</span><span class="font-semibold">600 € <span class="text-xs font-normal text-base-content/50">60 €/h</span></span></div>
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Member</span><span class="font-semibold">480 € <span class="text-xs font-normal text-base-content/50">48 €/h</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CLASES ============ -->
+      <section class="panel hidden" id="clases" role="tabpanel">
+        <div class="mb-6">
+          <h2 class="text-2xl sm:text-3xl font-extrabold montserrat tracking-tight">Clases</h2>
+          <p class="text-base-content/70 mt-2 max-w-2xl">Sesiones con profesor y bonos de clases. Reserva con hasta 7 días de antelación.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Clase suelta</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">55 min</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Guest</span><span class="font-semibold">80 €</span></div>
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Member</span><span class="font-semibold">68 €</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Clase dúo</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">2 personas · 55 min</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Guest</span><span class="font-semibold">110 €</span></div>
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Member</span><span class="font-semibold">94 €</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Bono 5 clases</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">individual</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Precio</span><span class="font-semibold">375 € <span class="text-xs font-normal text-base-content/50">75 €/clase</span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Bono 10 clases</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">individual</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Precio</span><span class="font-semibold">700 € <span class="text-xs font-normal text-base-content/50">70 €/clase</span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Bono 5 clases dúo</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">2 personas</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Precio</span><span class="font-semibold">525 € <span class="text-xs font-normal text-base-content/50">105 €/clase</span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#FFF] shadow-sm rounded-2xl">
+            <div class="card-body">
+              <h3 class="montserrat font-semibold text-lg">Bono 10 clases dúo</h3>
+              <p class="text-xs uppercase tracking-wide text-base-content/50">2 personas</p>
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="flex justify-between text-sm"><span class="text-base-content/60">Precio</span><span class="font-semibold">980 € <span class="text-xs font-normal text-base-content/50">98 €/clase</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MEMBRESÍAS ============ -->
+      <section class="panel hidden" id="socios" role="tabpanel">
+        <div class="mb-6">
+          <h2 class="text-2xl sm:text-3xl font-extrabold montserrat tracking-tight">Club Nervo</h2>
+          <p class="text-base-content/70 mt-2 max-w-2xl">Tarifa reducida en simuladores, reservas con más antelación y ventajas exclusivas. Precio mensual.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5 items-stretch">
+
+          <!-- Member -->
+          <div class="card bg-[#FFF] shadow-sm rounded-3xl flex flex-col">
+            <div class="card-body">
+              <p class="text-xs uppercase  text-base-content/50 montserrat">Club Member</p>
+              <p class="text-4xl font-extrabold montserrat">49 €<span class="text-sm font-medium text-base-content/60"> /mes</span></p>
+              <ul class="flex flex-col gap-2 mt-4 text-sm pb-4">
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>1 sesión gratis en Full Swing (1h)</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>20% de descuento en simuladores</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>Reservas con 14 días de antelación</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>Acceso a box privado de Members</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>15% en Academy</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>Invitaciones a eventos y torneos</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>Acceso anticipado a nuevas colecciones</li>
+              </ul>
+              <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/shop?tab=1" class="btn w-full mt-auto">Únete</a>
+            </div>
+          </div>
+
+          <!-- Gold (destacado) -->
+          <div class="card bg-secondary text-secondary-content shadow-xl border border-secondary rounded-3xl flex flex-col">
+            <div class="card-body">
+              <p class="text-xs uppercase  text-accent montserrat">Gold member</p>
+              <p class="text-4xl font-extrabold montserrat text-accent">89 €<span class="text-sm font-medium text-secondary-content/70"> /mes</span></p>
+              <ul class="flex flex-col gap-2 mt-4 text-sm pb-4">
+                <li class="flex items-start gap-2 text-secondary-content/85"><i class="ph ph-check text-accent text-base mt-0.5"></i>1 sesión gratis en Full Swing (1h)</li>
+                <li class="flex items-start gap-2 text-secondary-content/85"><i class="ph ph-check text-accent text-base mt-0.5"></i>1 sesión gratis en Awolf Quantum VX (1h)</li>
+                <li class="flex items-start gap-2 text-secondary-content/85"><i class="ph ph-check text-accent text-base mt-0.5"></i>20% de descuento en simuladores</li>
+                <li class="flex items-start gap-2 text-secondary-content/85"><i class="ph ph-check text-accent text-base mt-0.5"></i>Reservas con 14 días de antelación</li>
+                <li class="flex items-start gap-2 text-secondary-content/85"><i class="ph ph-check text-accent text-base mt-0.5"></i>Acceso a box privado de Members</li>
+                <li class="flex items-start gap-2 text-secondary-content/85"><i class="ph ph-check text-accent text-base mt-0.5"></i>15% en Academy</li>
+                <li class="flex items-start gap-2 text-secondary-content/85"><i class="ph ph-check text-accent text-base mt-0.5"></i>Invitaciones a eventos y torneos</li>
+                <li class="flex items-start gap-2 text-secondary-content/85"><i class="ph ph-check text-accent text-base mt-0.5"></i>Acceso anticipado a nuevas colecciones</li>
+              </ul>
+              <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/shop?tab=1" class="btn btn-accent w-full mt-auto">Empieza este mes</a>
+            </div>
+          </div>
+
+          <!-- Platinum -->
+          <div class="card bg-[#FFF] shadow-sm rounded-3xl flex flex-col">
+            <div class="card-body">
+              <p class="text-xs uppercase  text-base-content/50 montserrat">Platinum member</p>
+              <p class="text-4xl font-extrabold montserrat">169 €<span class="text-sm font-medium text-base-content/60"> /mes</span></p>
+              <ul class="flex flex-col gap-2 mt-4 text-sm pb-4">
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>2 sesiones gratis en Full Swing (1h)</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>2 sesiones gratis en Awolf Quantum VX (1h)</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>20% de descuento en simuladores</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>Reservas con 14 días de antelación</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>Acceso a box privado de Members</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>15% en Academy</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>5% de descuento en tienda</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>Invitaciones a eventos y torneos</li>
+                <li class="flex items-start gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base mt-0.5"></i>Acceso anticipado a nuevas colecciones</li>
+              </ul>
+              <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/shop?tab=1" class="btn w-full mt-auto">Únete</a>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+
+    </main>
+
+    <!-- ─── FOOTER ─────────────────────────────────────────────────────────── -->
+    <footer class="footer sm:footer-horizontal bg-secondary text-white p-12 md:p-24">
+      <aside class="flex flex-col gap-6">
+        <a href="/"><img src="/assets/logo-h-blanco.svg" alt="NervoGolf" class="h-24 w-auto transition-all hover:scale-105" /></a>
+        <p>NERVO GOLF FITTING &amp; PERFORMANCE CENTER<br />Fitting &amp; Performance Center en Las Rozas, Madrid</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Servicios</h6>
+        <a href="/#simuladores" class="link link-hover">Simuladores</a>
+        <a href="/#fitting" class="link link-hover">Fitting</a>
+        <a href="/#planes" class="link link-hover">Club Nervo</a>
+        <a href="/tarifas.html" class="link link-hover">Tarifas</a>
+        <a href="/#academia" class="link link-hover">Academia</a>
+        <a href="/#tienda" class="link link-hover">Tienda</a>
+        <a href="/#taller" class="link link-hover">Taller</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Nervo Golf</h6>
+        <a href="/contacto.html" class="link link-hover">Contacto</a>
+      </nav>
+      <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a href="/legal.html" class="link link-hover">Aviso legal</a>
+          <a href="/legal.html#terminos" class="link link-hover">Términos de uso y privacidad</a>
+          <a href="/legal.html#devoluciones" class="link link-hover">Política de cambios y devoluciones</a>
+          <a href="/legal.html#cancelaciones" class="link link-hover">Política de cancelaciones</a>
+          <a href="/legal.html#cookies" class="link link-hover">Política de cookies</a>
+      </nav>
+    </footer>
+    <footer class="footer footer-center bg-secondary text-white p-4">
+      <aside><p>Copyright © 2026 - All right reserved by Nervo Golf</p></aside>
+    </footer>
+  </div>
+
+  <div id="cookie-banner" class="cookie-banner" style="display:none">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p class="cookie-banner__title">Usamos cookies 🍪</p>
+        <p class="cookie-banner__description">
+          Utilizamos cookies propias y de terceros para analizar el uso de la web.
+          <a href="/legal.html#cookies" class="cookie-banner__link">Política de cookies</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button id="cookie-decline" class="btn btn-ghost btn-sm rounded-xl">Solo necesarias</button>
+        <button id="cookie-accept" class="btn btn-primary btn-sm rounded-xl">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+  <script>
+    // ─── Service tabs ───
+    const tabs = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.panel');
+    function styleTab(t) {
+      const on = t.getAttribute('aria-selected') === 'true';
+      t.classList.toggle('bg-primary', on);
+      t.classList.toggle('text-white', on);
+      t.classList.toggle('text-base-content/60', !on);
+      t.classList.toggle('hover:text-base-content', !on);
+    }
+    tabs.forEach(t => {
+      styleTab(t);
+      t.addEventListener('click', () => {
+        tabs.forEach(x => { x.setAttribute('aria-selected', 'false'); styleTab(x); });
+        panels.forEach(p => p.classList.add('hidden'));
+        t.setAttribute('aria-selected', 'true');
+        styleTab(t);
+        document.getElementById(t.dataset.tab).classList.remove('hidden');
+      });
+    });
+
+    // ─── Member / Guest segmented ───
+    const segBtns = document.querySelectorAll('.seg-btn');
+    const groups = document.querySelectorAll('.sim-group');
+    function styleSeg(b) {
+      const on = b.getAttribute('aria-selected') === 'true';
+      b.classList.toggle('btn-secondary', on);
+      b.classList.toggle('btn-ghost', !on);
+    }
+    segBtns.forEach(b => {
+      styleSeg(b);
+      b.addEventListener('click', () => {
+        segBtns.forEach(x => { x.setAttribute('aria-selected', 'false'); styleSeg(x); });
+        groups.forEach(g => g.classList.add('hidden'));
+        b.setAttribute('aria-selected', 'true');
+        styleSeg(b);
+        document.querySelector('.sim-group[data-aud="' + b.dataset.aud + '"]').classList.remove('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

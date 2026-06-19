@@ -1,0 +1,14 @@
+{
+  "name": "nervogolf-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./styles.css --watch",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./styles.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "daisyui": "^5.5.19",
+    "tailwindcss": "^4.1.12"
+  }
+}

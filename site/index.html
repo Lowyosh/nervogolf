@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="es" data-theme="nervogolf">
+<head>
+  <meta charset="utf-8" />
+  <title>Nervo Golf — Fitting &amp; Performance Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nervo Golf Fitting &amp; Performance Center en Las Rozas, Madrid. Simuladores, fitting, academia y tienda de golf." />
+
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Nervo Golf" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- ─── TOPBAR ─────────────────────────────────────────────────────────── -->
+  <header class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-6">
+    <div class="relative max-w-6xl w-full">
+    <div class="topbar-glass absolute inset-0 rounded-2xl pointer-events-none"></div>
+    <div class="navbar relative z-10">
+
+      <div class="navbar-start ml-2">
+        <a href="/"><img src="/assets/logo-h-negro.svg" alt="NervoGolf" class="h-8 w-auto transition-all hover:scale-105" /></a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-2">
+          <li>
+            <details>
+              <summary>Simuladores</summary>
+              <ul class="p-2 w-40 z-10 rounded-xl dropdown-glass">
+                <li><a href="/#simuladores">Awolf Quantum VX</a></li>
+                <li><a href="/#full-swing">Full Swing</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="/#fitting">Fitting</a></li>
+          <li><a href="/#planes">Club Nervo</a></li>
+          <li><a href="/tarifas.html">Tarifas</a></li>
+          <li><a href="/#academia">Academia</a></li>
+          <li><a href="/#tienda">Tienda</a></li>
+          <li><a href="/#taller">Taller</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end gap-4">
+        <div class="dropdown dropdown-end lg:hidden">
+          <div tabindex="0" role="button" class="btn-ghost btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1" class="menu menu-md dropdown-content rounded-2xl z-10 mt-10 w-52 p-2 dropdown-glass">
+            <li>
+              <details>
+                <summary>Simuladores</summary>
+                <ul class="p-2 w-40 z-10 rounded-xl dropdown-glass">
+                  <li><a href="/#simuladores">Awolf Quantum VX</a></li>
+                  <li><a href="/#full-swing">Full Swing</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="/#fitting">Fitting</a></li>
+            <li><a href="/#planes">Club Nervo</a></li>
+            <li><a href="/tarifas.html">Tarifas</a></li>
+            <li><a href="/#academia">Academia</a></li>
+            <li><a href="/#tienda">Tienda</a></li>
+            <li><a href="/#taller">Taller</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <a href="https://eu.golfmanager.com/nervogolf" target="_blank" class="btn btn-primary btn-lg rounded-xl">Reservar</a>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- ─── MAIN ───────────────────────────────────────────────────────────── -->
+  <main class="flex flex-col gap-36 bg-[#FFF]">
+
+    <!-- HERO -->
+    <div class="md:mx-8 md:mt-10 md:rounded-3xl rounded-b-2xl hero-animate">
+      <div class="hero min-h-180 rounded-b-2xl md:rounded-3xl z-0 center" style="background-image: url(/assets/img/hero.jpg);">
+        <div class="hero-overlay rounded-b-2xl md:rounded-3xl"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-md mt-6">
+            <div class="flex flex-col gap-2 text-white montserrat">
+              <h2 class="text-3xl md:text-5xl font-bold leading-none">El futuro está en</h2>
+              <div class="flex flex-col gap-0 md:flex-row md:gap-4 justify-center">
+                <h2 class="text-6xl md:text-8xl font-extrabold leading-none tracking-tighter">NERVO</h2>
+                <h2 class="mb-6 text-6xl md:text-8xl font-medium leading-none tracking-tighter">GOLF</h2>
+              </div>
+            </div>
+            <p class="mb-5 text-lg text-white">Un espacio donde el golf se entrena, se comparte y se vive con precisión</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COUNTDOWN -->
+    <!-- Cambia la fecha objetivo en data-deadline (formato ISO con zona horaria) -->
+    <section id="countdown" class="flex flex-col items-center gap-6 -mt-24 px-6">
+      <h3 class="text-2xl md:text-4xl font-extrabold montserrat tracking-tight uppercase text-center">Apertura en</h3>
+      <div data-deadline="2026-06-23T10:00:00+02:00" class="countdown-timer grid auto-cols-max grid-flow-col gap-5 text-center">
+        <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+          <span class="countdown font-mono text-5xl">
+            <span data-unit="days" style="--value:0;" aria-live="polite" aria-label="0">0</span>
+          </span>
+          días
+        </div>
+        <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+          <span class="countdown font-mono text-5xl">
+            <span data-unit="hours" style="--value:0;" aria-live="polite" aria-label="0">0</span>
+          </span>
+          horas
+        </div>
+        <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+          <span class="countdown font-mono text-5xl">
+            <span data-unit="minutes" style="--value:0;" aria-live="polite" aria-label="0">0</span>
+          </span>
+          min
+        </div>
+        <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+          <span class="countdown font-mono text-5xl">
+            <span data-unit="seconds" style="--value:0;" aria-live="polite" aria-label="0">0</span>
+          </span>
+          seg
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFORMANCE CLUB -->
+    <section id="performance-club" class="flex justify-center">
+      <div class="w-full justify-center flex flex-row items-center gap-4 md:gap-2 px-4 md:px-16">
+        <canvas id="performance-sphere" class="shrink-0" style="width:clamp(80px,25vw,260px);height:clamp(80px,25vw,260px);"></canvas>
+        <h2 class="font-black tracking-tighter leading-none uppercase text-left text-secondary min-w-0"
+            style="font-family:'Montserrat',sans-serif;font-size:clamp(1.75rem,7vw,6rem);">PERFORMANCE<br>CLUB</h2>
+      </div>
+    </section>
+
+    <!-- SIMULADORES -->
+    <section id="simuladores" class="flex flex-col gap-6 md:p-24 p-6">
+      <h3 class="text-3xl font-extrabold montserrat tracking-tight uppercase">Simuladores</h3>
+
+      <div id="quantum-vx" class="card lg:card-side bg-base-100 shadow-sm" style="border-radius: var(--radius-3xl);">
+        <figure>
+          <img src="/assets/img/simuladores/quantum-vx.avif" alt="Golf simulator Awolf Quantum VX" />
+        </figure>
+        <div class="card-body md:p-12 md:gap-6">
+          <h2 class="card-title font-black text-2xl md:text-6xl flex flex-row gap-4 items-start mask-conic-to-secondary tracking-tight">
+            Awolf Quantum VX
+            <div class="badge badge-accent">NEW</div>
+          </h2>
+          <p class="md:text-2xl">Con Q-Plate de 15 ejes que reproduce más de 19.000 lies, ningún otro simulador en el mundo se acerca a esta experiencia revolucionaria.</p>
+          <div class="flex flex-col md:flex-row gap-2">
+            <div class="badge badge-outline badge-info badge-lg">Latest technology</div>
+            <div class="badge badge-outline badge-primary badge-lg">Premium Box</div>
+            <div class="badge badge-outline badge-primary badge-lg">1 - 4 jugadores</div>
+          </div>
+          <div class="card-actions justify-end mt-6 md:mt-0">
+            <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/book?area=101&resourceType=105" class="btn btn-primary btn-md md:btn-lg">Reserva</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="full-swing" class="card lg:card-side bg-base-100 shadow-sm" style="border-radius: var(--radius-3xl);">
+        <div class="card-body md:p-12 md:gap-6">
+          <h2 class="card-title text-2xl md:text-6xl montserrat font-black tracking-tight">Full Swing</h2>
+          <p class="md:text-2xl">El simulador oficial del PGA TOUR y líder del mercado en tecnología deportiva innovadora</p>
+          <div class="badge badge-outline badge-info badge-lg">Tiger Woods Approved</div>
+          <div class="card-actions justify-end">
+            <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/book?area=101&resourceType=104" class="btn btn-primary btn-md md:btn-lg mt-6">Reserva</a>
+          </div>
+        </div>
+        <figure>
+          <img src="/assets/img/simuladores/full-swing.webp" alt="Full Swing simulator" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- FITTING -->
+    <section id="fitting" class="relative w-full min-h-80 overflow-hidden p-6 md:p-24 bg-base-100">
+      <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="cutting-mat" width="80" height="80" patternUnits="userSpaceOnUse">
+            <line x1="80" y1="0" x2="80" y2="80" stroke="#4dd9c0" stroke-width="1" stroke-dasharray="8 6"/>
+            <line x1="0" y1="80" x2="80" y2="80" stroke="#4dd9c0" stroke-width="1" stroke-dasharray="8 6"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="white"/>
+        <rect width="100%" height="100%" fill="url(#cutting-mat)"/>
+      </svg>
+
+      <div class="relative z-10">
+        <h3 class="text-3xl font-extrabold montserrat tracking-tight uppercase mb-8">Fitting</h3>
+        <div class="flex flex-col gap-6">
+          <div class="card p-6 bg-base-100 rounded-3xl">
+            <div class="carousel carousel-center rounded-box w-full h-80 gap-4">
+              <div id="item1" class="carousel-item">
+                <img src="/assets/img/fitting/fitting-1.webp" class="w-full rounded-2xl" alt="Fitting de golf" />
+              </div>
+              <div id="item2" class="carousel-item">
+                <img src="/assets/img/fitting/fitting-2.jpg" class="w-full rounded-2xl" alt="Fitting de golf" />
+              </div>
+              <div id="item3" class="carousel-item">
+                <img src="/assets/img/fitting/fitting-3.webp" class="w-full rounded-2xl" alt="Fitting de golf" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <p class="md:text-2xl">El servicio de fitting se centra en encontrar el material más eficiente para tu swing y maximizar tu rendimiento, sea cual sea tu nivel. Los mejores profesionales diseñan tus hierros a medida para que mejores tu juego y puedas alcanzar tus objetivos.</p>
+            <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/book?area=105" class="btn btn-secondary btn-md max-w-60 transition-all hover:shadow-2xs">Reserva tu fitting</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planes -->
+    <section id="planes" class="md:p-24 p-6 gradient">
+      <h3 class="text-3xl font-extrabold montserrat tracking-tight uppercase mb-8 text-white">Club Nervo</h3>
+      <div class="flex flex-col lg:flex-row gap-6 items-stretch justify-center">
+
+        <!-- Member -->
+        <div class="card shadow-lg rounded-3xl flex-1 bg-[#FFF] transition-all hover:-translate-y-1 max-w-100">
+          <div class="flex justify-center m-6 mt-8">
+            <figure class="max-w-100 rounded-2xl">
+              <img src="/assets/img/planes/member.png" alt="Plan Member" />
+            </figure>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title sm:text-3xl montserrat">Club Member</h2>
+            <p class="text-4xl font-extrabold montserrat">49 €<span class="text-sm font-medium"> /mes</span></p>
+            <ul class="flex flex-col text-left items-start gap-2 py-6 text-sm md:text-md">
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>1 sesión gratis en Full Swing (1h)</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>20% de descuento en simuladores</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Reservas con 14 días de antelación</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Acceso a box privado de Members</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>15% en Academy</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Invitaciones a eventos y torneos</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Acceso anticipado a nuevas colecciones</li>
+            </ul>
+            <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/shop?tab=1" class="btn w-full mt-auto">Únete</a>
+          </div>
+        </div>
+
+        <!-- Gold -->
+        <div class="card bg-[#FFF] shadow-xl rounded-3xl border border-accent flex-1 transition-all hover:-translate-y-1 max-w-100">
+          <div class="flex justify-center m-6 mt-8">
+            <figure class="max-w-100 rounded-2xl">
+              <img src="/assets/img/planes/gold.png" alt="Plan Gold" />
+            </figure>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title sm:text-3xl montserrat">Gold Member</h2>
+            <p class="text-4xl font-extrabold montserrat">89 €<span class="text-sm font-medium"> /mes</span></p>
+            <div class="badge badge-soft badge-accent">Most popular</div>
+            <ul class="flex flex-col text-left items-start gap-2 py-6 text-sm md:text-md">
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>1 sesión gratis en Full Swing (1h)</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>1 sesión gratis en Awolf Quantum VX (1h)</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>20% de descuento en simuladores</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Reservas con 14 días de antelación</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Acceso a box privado de Members</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>15% en Academy</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Invitaciones a eventos y torneos</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Acceso anticipado a nuevas colecciones</li>
+            </ul>
+            <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/shop?tab=1" class="btn mt-auto btn-info w-full">Empieza este mes</a>
+          </div>
+        </div>
+
+        <!-- Platinum -->
+        <div class="card bg-[#FFF] shadow-lg rounded-3xl flex-1 transition-all hover:-translate-y-1 max-w-100">
+          <div class="flex justify-center m-6 mt-8">
+            <figure class="max-w-100 rounded-2xl">
+              <img src="/assets/img/planes/platinum.png" alt="Plan Platinum" />
+            </figure>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title sm:text-3xl montserrat">Platinum Member</h2>
+            <p class="text-4xl font-extrabold montserrat">169 €<span class="text-sm font-medium"> /mes</span></p>
+            <ul class="flex flex-col text-left items-start gap-2 py-6 text-sm md:text-md">
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>2 sesiones gratis en Full Swing (1h)</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>2 sesiones gratis en Awolf Quantum VX (1h)</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>20% de descuento en simuladores</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Reservas con 14 días de antelación</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Acceso a box privado de Members</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>15% en Academy</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>5% de descuento en tienda</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Invitaciones a eventos y torneos</li>
+              <li class="flex items-center gap-2 text-base-content/70"><i class="ph ph-check text-accent text-base"></i>Acceso anticipado a nuevas colecciones</li>
+            </ul>
+            <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/shop?tab=1" class="btn w-full mt-auto ">Únete</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACADEMIA -->
+    <section id="academia" class="flex flex-col md:flex-row gap-6 p-6 md:px-24 items-center pt-0">
+      <div class="flex flex-col gap-6 md:py-12">
+        <h3 class="text-3xl font-extrabold montserrat tracking-tight uppercase">Academia</h3>
+        <p class="md:text-2xl">
+          En <strong class="montserrat tracking-tight font-extrabold">NERVO</strong> podrás dar clases con cualquier nivel: Desde no tener handicap hasta clases avanzadas.<br><br>
+          Recibirás la mejor experiencia de entrenamiento y aprendizaje con nuestros técnicos deportivos.<br><br>
+          Además, ofrecemos clases infantiles y alevines para que tus hijos aprendan a jugar de manera segura y divertida.
+        </p>
+        <div class="flex gap-4 mt-2">
+          <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/book?area=102" class="btn btn-md btn-secondary self-start">Reservar clase</a>
+          <a target="_blank" href="https://eu.golfmanager.com/nervogolf/consumer/shop?tab=2" class="btn btn-md btn-primary self-start">Comprar bonos</a>
+        </div>
+
+      </div>
+      <img class="rounded-3xl w-full md:max-w-lg" src="/assets/img/academia/academia.jpg" alt="Clases de golf en NERVO" />
+    </section>
+
+    <!-- TIENDA -->
+    <section id="tienda" class="flex flex-col gap-6">
+      <div class="flex flex-col gap-6 md:px-24 px-6">
+        <h3 class="text-3xl font-extrabold montserrat tracking-tight uppercase">Tienda</h3>
+        <span class="md:text-2xl">
+          En nuestro showroom podrás encontrar los mejores  
+          <span class="word-cycle md:text-2xl ml-1 md:pt-0.5">
+            <span>
+              <span class="text-accent">palos</span>
+              <span class="text-primary">guantes</span>
+              <span class="text-secondary">gorras</span>
+              <span class="text-info">polos</span>
+              <span class="text-accent">gafas</span>
+              <span class="text-primary">zapatos</span>
+            </span>
+          </span>
+        </span>
+      </div>
+
+      <!-- Marquee logos -->
+      <div class="overflow-hidden whitespace-nowrap bg-base-100">
+        <div class="flex w-max animate-marquee items-center">
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/Titleist.png" alt="Titleist" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/glenmuir.png" alt="Glenmuir" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/oakley.png" alt="Oakley" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/TaylorMade.png" alt="TaylorMade" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/adidas.png" alt="Adidas" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/Srixon.png" alt="Srixon" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/fj.svg" alt="FootJoy" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/ecco.png" alt="ECCO" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/jlindeberg.png" alt="J.Lindeberg" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/garmin.svg" alt="Garmin" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/matize.avif" alt="Matize" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/petermillar.avif" alt="Peter Millar" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/xxio.png" alt="XXIO" /></span>
+          <!-- Duplicado para el loop continuo -->
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/Titleist.png" alt="Titleist" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/glenmuir.png" alt="Glenmuir" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/oakley.png" alt="Oakley" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/TaylorMade.png" alt="TaylorMade" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/adidas.png" alt="Adidas" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/Srixon.png" alt="Srixon" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/fj.svg" alt="FootJoy" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/ecco.png" alt="ECCO" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/jlindeberg.png" alt="J.Lindeberg" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/garmin.svg" alt="Garmin" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/matize.avif" alt="Matize" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/petermillar.avif" alt="Peter Millar" /></span>
+          <span class="mx-8 max-w-20"><img class="transition-all hover:scale-105" src="/assets/logos/xxio.png" alt="XXIO" /></span>
+
+        </div>
+      </div>
+
+      <!-- Galería: carousel en móvil, grid en desktop -->
+      <div class="hidden carousel rounded-box w-full px-6 md:hidden">
+        <div class="carousel-item w-full"><img src="/assets/img/tienda/tienda-1.jpg" class="w-full object-cover" alt="Tienda" /></div>
+        <div class="carousel-item w-full"><img src="/assets/img/tienda/tienda-2.jpg" class="w-full object-cover" alt="Tienda" /></div>
+        <div class="carousel-item w-full"><img src="/assets/img/tienda/tienda-3.jpg" class="w-full object-cover" alt="Tienda" /></div>
+      </div>
+
+      <div class="hidden gap-6 py-8 px-24">
+        <div class="flex-1 aspect-square overflow-hidden rounded-3xl">
+          <img src="/assets/img/tienda/tienda-1.jpg" class="w-full h-full object-cover rounded-3xl" alt="Tienda" />
+        </div>
+        <div class="flex-1 aspect-square overflow-hidden rounded-3xl">
+          <img src="/assets/img/tienda/tienda-2.jpg" class="w-full h-full object-cover rounded-3xl" alt="Tienda" />
+        </div>
+        <div class="flex-1 aspect-square overflow-hidden rounded-3xl">
+          <img src="/assets/img/tienda/tienda-3.jpg" class="w-full h-full object-cover rounded-3xl" alt="Tienda" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TALLER -->
+    <section id="taller" class="flex flex-col md:flex-row gap-6 p-6 md:px-24 items-center bg-base-100">
+      <img class="rounded-3xl w-full md:max-w-md" src="/assets/img/taller/taller.avif" alt="Taller de golf en NERVO" />
+      <div class="flex flex-col gap-6 md:py-24 md:px-8 max-w-2xl">
+        <h3 class="text-3xl font-extrabold montserrat tracking-tight uppercase">Taller</h3>
+        <p class="md:text-2xl">Siempre que lo necesites, podrás acercarte a nuestro workshop para recibir el mejor servicio en ajuste de tus palos.</p>
+        <a href="/contacto.html" class="btn btn-md btn-secondary self-start">Contacto</a>
+      </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section id="eventos" class="flex flex-col gap-6 md:p-24 p-6">
+      <div>
+        <h3 class="text-3xl font-extrabold montserrat tracking-tight uppercase">Eventos</h3>
+        <p class="md:text-2xl">Tenemos el espacio perfecto donde hacer el evento que necesitas</p>
+      </div>
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="card bg-base-100 flex-1 rounded-3xl hover:scale-102 transition-all flex-row items-center md:flex-col md:items-stretch">
+          <figure class="p-6 shrink-0 md:px-10 md:pt-10">
+            <div class="w-20 h-20 flex items-center justify-center md:w-40 md:h-32">
+              <img src="/assets/icons/golf-icon3.svg" alt="Presentación de productos" class="w-full h-full object-contain" />
+            </div>
+          </figure>
+          <div class="card-body items-start text-left justify-center md:items-center md:text-center md:justify-end">
+            <h2 class="card-title font-light">Presentación de productos</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 rounded-3xl flex-1 hover:scale-102 transition-all flex-row items-center md:flex-col md:items-stretch">
+          <figure class="p-6 shrink-0 md:px-10 md:pt-10">
+            <div class="w-20 h-20 flex items-center justify-center md:w-40 md:h-32">
+              <img src="/assets/icons/golf-icon1.svg" alt="Eventos privados" class="w-full h-full object-contain" />
+            </div>
+          </figure>
+          <div class="card-body items-start text-left justify-center md:items-center md:text-center md:justify-end">
+            <h2 class="card-title font-light">Eventos privados o corporativos</h2>
+          </div>
+        </div>
+        <div class="card bg-base-100 rounded-3xl flex-1 hover:scale-102 transition-all flex-row items-center md:flex-col md:items-stretch">
+          <figure class="p-6 shrink-0 md:px-10 md:pt-10">
+            <div class="w-20 h-20 flex items-center justify-center md:w-40 md:h-32">
+              <img src="/assets/icons/golf-icon2.svg" alt="Team building" class="w-full h-full object-contain" />
+            </div>
+          </figure>
+          <div class="card-body items-start text-left justify-center md:items-center md:text-center md:justify-end">
+            <h2 class="card-title font-light">Team building</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS -->
+    <section id="faqs" class="flex flex-col gap-6 md:p-24 p-6">
+      <h3 class="text-3xl font-extrabold montserrat tracking-tight">FAQs</h3>
+      <div class="flex flex-col gap-3">
+        <div class="collapse collapse-plus bg-base-100 hover:scale-101 transition-all">
+          <input type="radio" name="faqs-accordion" checked />
+          <div class="collapse-title font-semibold">¿Qué es NervoGolf y qué ofrecen?</div>
+          <div class="collapse-content text-sm">NervoGolf es un centro de golf indoor con simuladores de última generación donde puedes practicar, mejorar tu juego y disfrutar del golf durante todo el año, sin depender del clima. Ofrecemos clases, fitting de palos, talleres, tienda y espacios para eventos.</div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 hover:scale-101 transition-all">
+          <input type="radio" name="faqs-accordion" />
+          <div class="collapse-title font-semibold">¿Necesito experiencia previa para venir?</div>
+          <div class="collapse-content text-sm">No, en absoluto. Tenemos opciones para todos los niveles, desde principiantes absolutos hasta jugadores avanzados. Nuestros profesores adaptarán las clases a tu nivel y objetivos.</div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 hover:scale-101 transition-all">
+          <input type="radio" name="faqs-accordion" />
+          <div class="collapse-title font-semibold">¿Cómo puedo reservar una sesión en el simulador?</div>
+          <div class="collapse-content text-sm">Puedes hacer click en el botón <span class="font-semibold py-1 px-2 bg-primary rounded text-white mx-1">RESERVA</span> de nuestra web o contactarnos por teléfono o redes sociales. Estaremos encantados de ayudarte</div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 hover:scale-101 transition-all">
+          <input type="radio" name="faqs-accordion" />
+          <div class="collapse-title font-semibold">¿Qué incluye el servicio de fitting?</div>
+          <div class="collapse-content text-sm">El fitting es un análisis personalizado de tu swing y características físicas para recomendarte el equipamiento que mejor se adapta a tu juego. Utilizamos tecnología de medición avanzada para garantizar que juegas con los palos ideales para ti.</div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 hover:scale-101 transition-all">
+          <input type="radio" name="faqs-accordion" />
+          <div class="collapse-title font-semibold">¿Podéis organizar eventos corporativos o privados?</div>
+          <div class="collapse-content text-sm">Sí, disponemos de espacios y simuladores perfectos para team building, presentaciones de productos y celebraciones privadas. Contacta con nosotros y te ayudamos a diseñar la experiencia a medida para tu grupo.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="bg-secondary">
+      <footer class="footer sm:footer-horizontal text-white p-12 md:p-24">
+        <aside class="flex flex-col gap-6">
+          <a href="/"><img src="/assets/logo-h-blanco.svg" alt="NervoGolf" class="h-24 w-auto transition-all hover:scale-105" /></a>
+          <p>NERVO GOLF FITTING &amp; PERFORMANCE CENTER<br />Fitting &amp; Performance Center en Las Rozas, Madrid</p>
+        </aside>
+        <nav>
+          <h6 class="footer-title">Servicios</h6>
+          <a href="/#simuladores" class="link link-hover">Simuladores</a>
+          <a href="/#fitting" class="link link-hover">Fitting</a>
+          <a href="/#planes" class="link link-hover">Club Nervo</a>
+          <a href="/tarifas.html" class="link link-hover">Tarifas</a>
+          <a href="/#academia" class="link link-hover">Academia</a>
+          <a href="/#tienda" class="link link-hover">Tienda</a>
+          <a href="/#taller" class="link link-hover">Taller</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Nervo Golf</h6>
+          <a href="/contacto.html" class="link link-hover">Contacto</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a href="/legal.html" class="link link-hover">Aviso legal</a>
+          <a href="/legal.html#terminos" class="link link-hover">Términos de uso y privacidad</a>
+          <a href="/legal.html#devoluciones" class="link link-hover">Política de cambios y devoluciones</a>
+          <a href="/legal.html#cancelaciones" class="link link-hover">Política de cancelaciones</a>
+          <a href="/legal.html#cookies" class="link link-hover">Política de cookies</a>
+        </nav>
+      </footer>
+      <footer class="footer footer-center text-white p-4">
+        <aside><p>Copyright © 2026 - All right reserved by Nervo Golf</p></aside>
+      </footer>
+    </div>
+
+  </main>
+
+  <!-- COOKIE CONSENT -->
+  <div id="cookie-banner" class="cookie-banner" style="display:none">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p class="cookie-banner__title">Usamos cookies 🍪</p>
+        <p class="cookie-banner__description">
+          Utilizamos cookies propias y de terceros (Google Analytics, Meta Pixel) para analizar el uso de la web y mostrarte publicidad personalizada.
+          <a href="/legal.html#cookies" class="cookie-banner__link">Política de cookies</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button id="cookie-decline" class="btn btn-ghost btn-sm rounded-xl">Solo necesarias</button>
+        <button id="cookie-accept" class="btn btn-primary btn-sm rounded-xl">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="/main.js"></script>
+  <script type="module" src="/sphere.js"></script>
+</body>
+</html>
