@@ -1,0 +1,3 @@
+[build]
+  command = "npm --prefix site install && npm --prefix site run build"
+  publish = "site"
