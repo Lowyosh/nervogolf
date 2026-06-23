@@ -2184,6 +2184,9 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -2410,6 +2413,9 @@
   }
   .text-accent {
     color: var(--color-accent);
+  }
+  .text-accent-2 {
+    color: var(--color-accent-2);
   }
   .text-base-content {
     color: var(--color-base-content);
