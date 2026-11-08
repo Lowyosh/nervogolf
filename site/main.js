@@ -14,16 +14,51 @@
 })();
 
 /* ─── Smooth anchor navigation ────────────────────────────────────────────── */
+const HEADER_OFFSET = 100;
+
+function scrollToTarget(target, behavior) {
+  const top = target.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+  window.scrollTo({ top, behavior });
+}
+
 document.querySelectorAll('a[href^="/#"]').forEach(a => {
   a.addEventListener('click', (e) => {
-    e.preventDefault();
     a.closest('details')?.removeAttribute('open');
     const target = document.querySelector(a.getAttribute('href').slice(1));
+    // Si la sección no está en esta página (p. ej. en tarifas.html), dejamos
+    // que el navegador navegue normalmente a la home con el ancla.
     if (!target) return;
-    const top = target.getBoundingClientRect().top + window.scrollY - 100;
-    window.scrollTo({ top, behavior: 'smooth' });
+    e.preventDefault();
+    scrollToTarget(target, 'smooth');
   });
 });
+
+/* ─── Llegada con ancla desde otra página (p. ej. tarifas → /#fitting) ──────
+   El navegador salta al ancla antes de que carguen las imágenes; al cargar,
+   empujan el contenido y la sección queda desplazada. Recolocamos al final
+   de la carga, salvo que el usuario ya haya hecho scroll por su cuenta. */
+(function fixInitialHashScroll() {
+  const hash = window.location.hash;
+  if (!hash || hash.length < 2) return;
+  let target;
+  try { target = document.querySelector(hash); } catch { return; }
+  if (!target) return;
+
+  let userScrolled = false;
+  const markUser = () => { userScrolled = true; };
+  const userEvents = ['wheel', 'touchmove', 'keydown', 'mousedown'];
+  userEvents.forEach(ev => window.addEventListener(ev, markUser, { once: true, passive: true }));
+
+  const realign = () => { if (!userScrolled) scrollToTarget(target, 'instant'); };
+  realign();
+  window.addEventListener('load', () => {
+    // Tras el ScrollTrigger.refresh() del load, en el siguiente frame
+    requestAnimationFrame(() => {
+      realign();
+      userEvents.forEach(ev => window.removeEventListener(ev, markUser));
+    });
+  });
+})();
 
 /* ─── GSAP ScrollTrigger ──────────────────────────────────────────────────── */
 if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
